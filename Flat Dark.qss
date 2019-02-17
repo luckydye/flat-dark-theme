@@ -84,7 +84,7 @@ QWidget::disabled {
 /* Dropdown menus, Scenes box, Sources box */
 
 QAbstractItemView {
-	background-color: #1c1c1c; /* veryDark */
+	background-color: #212121;
 }
 
 * [themeID="upArrowIconSmall"] {
@@ -203,7 +203,11 @@ OBSHotkeyLabel[hotkeyPairHover=true] {
 	color: rgba(27, 96, 166);
 }
 
-/* Listbox item */
+/* Listbox */
+
+QListWidget#scenes {
+	background: transparent;
+}
 
 QListWidget::item {
 	padding: 3px 4px 3px 4px;
@@ -214,7 +218,7 @@ QListWidget::item {
 
 SourceTree::item:hover,
 QListWidget::item:hover {
-	background-color: #212121;
+	background-color: #282828;
 }
 
 SourceTree::item:selected,
@@ -256,7 +260,7 @@ SourceTreeSubItemCheckBox::indicator:unchecked {
 }
 
 SourceTree::item {
-	padding: 2px;
+	padding: 3px 2px;
 }
 
 /* Group Box */
@@ -336,7 +340,7 @@ SourceListWidget {
 }
 
 #scenesToolbar,
-#sourcesToolbar{
+#sourcesToolbar {
 	background: #262626;
 }
 
@@ -686,9 +690,13 @@ QSlider::groove {
 }
 
 QSlider::handle {
-	background-color: #2d6dce;
+	/* background-color: #2d6dce; */
 	border: 1px solid #2d6dce;
 	border-radius: 3px;
+	background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1,
+		stop: 0 #4381dd,
+		stop: 0.5 #2d6dce,
+		stop: 1 #4381dd);
 }
 
 QSlider::handle:hover {
@@ -811,10 +819,6 @@ OBSBasicProperties,
 	background: #262626;
 }
 
-#OBSBasicSourceSelect #sourceList {
-	border-bottom: 2px solid #363336;
-}
-
 FocusList::item {
 	padding: 0px 2px;
 }
@@ -856,8 +860,12 @@ FocusList::item {
     background-color: rgb(31, 30, 31); /* veryDark */
 }
 
-/* Preview background color */
+/* Preview */
 
 * [themeID="displayBackgroundColor"] {
     qproperty-displayBackgroundColor: #1c1c1c;
+}
+
+#centralwidget {
+    background: #1c1c1c;
 }
