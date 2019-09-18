@@ -26,9 +26,9 @@ OBSTheme {
 }
 
 OBSTheme::disabled {
-    text: rgb(122,121,122); /* light */
-    buttonText: rgb(122,121,122); /* light */
-    brightText: rgb(122,121,122); /* light */
+    text: rgb(100,100,100); /* light */
+    buttonText: rgb(100,100,100); /* light */
+    brightText: rgb(100,100,100); /* light */
 }
 
 OBSTheme::inactive {
@@ -226,9 +226,6 @@ QDockWidget::title {
 
 QDockWidget::float-button {
 	icon-size: 20px;
-	subcontrol-position: center right;
-	subcontrol-origin: padding;
-    right: 4px;
 }
 
 QListWidget#scenes,
@@ -937,4 +934,18 @@ OBSBasicSettings {
 
 OBSQTDisplay {
 	qproperty-displayBackgroundColor: #1c1c1c;
+}
+
+/* Table View */
+
+QTableView {
+    gridline-color: rgb(88,87,88);
+}
+
+QHeaderView::section {
+	padding: 4px;
+	margin: 0;
+    background-color: rgb(58,57,58);
+    color: rgb(225,224,225);
+	border: none;
 }
