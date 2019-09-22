@@ -812,7 +812,22 @@ QToolButton:pressed {
 	qproperty-icon: url(./Flat Dark/down_arrow.png);
 }
 
+* [themeID="pauseIconSmall"] {
+    qproperty-icon: url(./Dark/media-pause.svg);
+}
 
+/* Pause */
+PauseCheckBox {
+    outline: none;
+}
+
+PauseCheckBox::indicator:checked {
+    image: url(:/res/images/media-pause.svg);
+}
+
+PauseCheckBox::indicator:unchecked {
+    image: url(:/res/images/media-play.svg);
+}
 
 /* Volume Control */
 
