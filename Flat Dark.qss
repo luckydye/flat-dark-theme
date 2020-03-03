@@ -220,7 +220,7 @@ QDockWidget {
 
 QDockWidget::title {
     background: #262626;
-	padding: 0px 2px;
+	padding: 4px 2px;
 	text-align: left;
 }
 
@@ -326,36 +326,33 @@ QTabWidget::tab-bar {
 QTabBar {
 	outline: none;
 	border: none;
+	background: #1D1D1D;
 }
 
 QTabBar::tab {
 	background-color: transparent;
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
     margin: 0;
     color: grey;
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
 }
 
 QTabBar::tab:top:selected {
-    border-bottom-color: grey;
     color: white;
 }
 
 QTabBar::tab:bottom:selected {
-    border-top-color: grey;
     color: white;
 }
 
 QTabBar::tab:selected {
-	background-color: #333333;
+	background-color: #262626;
 }
 
 QTabBar::tab:hover {
-	background-color: #444444;
+	background-color: #313131;
 }
 
 /* Group Box */
@@ -414,13 +411,13 @@ QComboBox:on {
 }
 
 QComboBox:editable {
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
+
+	
 }
 
 QComboBox::drop-down:editable {
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
+
+	
 }
 
 QComboBox::down-arrow:editable {
@@ -560,7 +557,7 @@ QProgressBar::chunk {
 /* Sliders */
 
 QSlider::groove {
-	background-color: black;
+	background-color: #1A1A1A;
 	border-radius: 5px;
 }
 
@@ -620,7 +617,7 @@ QSlider::handle:vertical {
 }
 
 QSlider::sub-page:vertical {
-	background: black;
+	background: #1A1A1A;
 }
 
 QSlider::sub-page:vertical:disabled {
@@ -656,14 +653,11 @@ SourceTree::item {
 	padding: 3px 2px;
 }
 
-
-
 /* Scenes */
 
 #scenes {
 	background: transparent;
 }
-
 /* Sources and Scenes CheckBoxes */
 
 VisibilityCheckBox,
@@ -771,21 +765,22 @@ QCheckBox::indicator:hover {
 QToolBar {
 	background-color: transparent;
 	padding: 0;
+	border-top: 1px solid #212121;
 }
 
 QToolButton {
 	margin-bottom: 0px;
 	padding: 2px;
-	margin: 4px 2px 0 2px;
+	margin: 4px;
 	border-radius: 2px;
 }
 
 QToolButton:hover {
-	background-color: #434343;
+	background-color: #313131;
 }
 
 QToolButton:pressed {
-	background-color: #484848;
+	background-color: #212121;
 }
 
 * [themeID="addIconSmall"] {
@@ -930,7 +925,7 @@ FocusList::item {
 }
 
 #centralwidget {
-    background: #1c1c1c;
+    background: #181818;
 }
 
 /* Settings Icons */
@@ -948,7 +943,7 @@ OBSBasicSettings {
 /* Preview background color */
 
 OBSQTDisplay {
-	qproperty-displayBackgroundColor: #1c1c1c;
+	qproperty-displayBackgroundColor: #181818;
 }
 
 /* Table View */
@@ -963,4 +958,62 @@ QHeaderView::section {
     background-color: rgb(58,57,58);
     color: rgb(225,224,225);
 	border: none;
+}
+
+/* Source Icons */
+
+OBSBasic {
+    qproperty-imageIcon: url(./Dark/sources/image.svg);
+    qproperty-colorIcon: url(./Dark/sources/brush.svg);
+    qproperty-slideshowIcon: url(./Dark/sources/slideshow.svg);
+    qproperty-audioInputIcon: url(./Dark/sources/microphone.svg);
+    qproperty-audioOutputIcon: url(./Dark/settings/audio.svg);
+    qproperty-desktopCapIcon: url(./Dark/settings/video.svg);
+    qproperty-windowCapIcon: url(./Dark/sources/window.svg);
+    qproperty-gameCapIcon: url(./Dark/sources/gamepad.svg);
+    qproperty-cameraIcon: url(./Dark/sources/camera.svg);
+    qproperty-textIcon: url(./Dark/sources/text.svg);
+    qproperty-mediaIcon: url(./Dark/sources/media.svg);
+    qproperty-browserIcon: url(./Dark/sources/globe.svg);
+    qproperty-groupIcon: url(./Dark/sources/group.svg);
+    qproperty-sceneIcon: url(./Dark/sources/scene.svg);
+    qproperty-defaultIcon: url(./Dark/sources/default.svg);
+}
+
+/* Scene Tree */
+
+SceneTree {
+    qproperty-gridItemWidth: 150;
+	qproperty-gridItemHeight: 27;
+}
+
+
+/* Save icon */
+
+* [themeID="replayIconSmall"] {
+    qproperty-icon: url(./Dark/save.svg);
+}
+
+/* Studio Mode T-Bar */
+
+QSlider[themeID="tBarSlider"] {
+	height: 24px;
+}
+
+QSlider::groove:horizontal[themeID="tBarSlider"] {
+	height: 12px;
+	background: rgb(31,30,31);
+}
+
+QSlider::sub-page:horizontal[themeID="tBarSlider"] {
+	background: rgb(51,51,51);
+}
+
+QSlider::handle:horizontal[themeID="tBarSlider"] {
+	border: 1px solid #2d6dce;
+	border-radius: 3px;
+	background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1,
+		stop: 0 #4381dd,
+		stop: 0.5 #2d6dce,
+		stop: 1 #4381dd);
 }
