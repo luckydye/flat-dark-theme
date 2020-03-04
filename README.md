@@ -1,6 +1,6 @@
 # Flat Dark Theme for OBS Studio
 
-### The purpose of this Theme is, to simplify and modernize the look of the UI inspired by the UI of Adobe CC Applications.
+### A Clean and simple Flat Dark theme for OBS Studio
 
 ![Preview](./preview.png)
 
