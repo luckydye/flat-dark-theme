@@ -164,9 +164,8 @@ QRadioButton::indicator:unchecked:disabled {
 
 QListWidget::item,
 SourceTree::item {
-	padding: 4px 2px;
-	margin-bottom: 0;
-	margin-top: 0;
+	padding: 2px 4px;
+	margin: 0;
 	border: 1px solid transparent;
 }
 
@@ -626,8 +625,6 @@ QSlider::sub-page:vertical:disabled {
 		stop: 0.75 rgb(50, 49, 50));
 }
 
-
-
 /* Sources */
 
 SourceTreeSubItemCheckBox {
@@ -637,8 +634,8 @@ SourceTreeSubItemCheckBox {
 }
 
 SourceTreeSubItemCheckBox::indicator {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 }
 
 SourceTreeSubItemCheckBox::indicator:checked {
@@ -649,15 +646,12 @@ SourceTreeSubItemCheckBox::indicator:unchecked {
     image: url(./Flat Dark/down_arrow.png);
 }
 
-SourceTree::item {
-	padding: 3px 2px;
-}
-
 /* Scenes */
 
 #scenes {
 	background: transparent;
 }
+
 /* Sources and Scenes CheckBoxes */
 
 VisibilityCheckBox,
@@ -986,7 +980,6 @@ SceneTree {
     qproperty-gridItemWidth: 150;
 	qproperty-gridItemHeight: 27;
 }
-
 
 /* Save icon */
 
