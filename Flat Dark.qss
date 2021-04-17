@@ -61,6 +61,12 @@ QWidget {
 	outline: none;
 	font-family: "Open Sans", "Tahoma", "Arial", sans-serif;
     font-size: 12px;
+	border: 0;
+}
+
+QMainWindow::separator {
+	width: 3px;
+	border: none;
 }
 
 QMainWindow {
