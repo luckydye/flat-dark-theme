@@ -2,7 +2,7 @@
 
 ### A Clean and simple Flat Dark theme for OBS Studio
 
-![Preview](./preview.png)
+![Preview](./preview.jpg)
 
 ![Preview](./preview_settings.png)
 

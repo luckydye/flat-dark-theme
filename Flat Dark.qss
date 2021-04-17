@@ -3,6 +3,20 @@
  * Can also use OBSTheme::disabled, OBSTheme::active, and OBSTheme::inactive.
  * Using it without will set all three (making 'active' a bit redundant) */
 
+/*
+Colors:
+
+	background_1: #131313
+	background_2: #1E1E1E
+
+	panel_1: #272727
+	panel_2: #333333
+	panel_3: #1E1E1E
+
+	textcolor_1: #CBCBCB
+	textcolor_2: #EEEEEE
+*/
+
 OBSTheme {
     window: rgb(58,57,58); /* dark */
     windowText: rgb(225,224,225); /* veryLight */
@@ -39,8 +53,8 @@ OBSTheme::inactive {
 /* General style, we override only what is needed. */
 
 QWidget {
-    background-color: #262626;
-    alternate-background-color: #262626; /* veryDark */
+    background-color: #272727;
+    alternate-background-color: #272727; /* veryDark */
     color: rgb(225,224,225); /* veryLight */
     selection-background-color: rgb(42,130,218); /* blue */
     selection-color: white;
@@ -50,12 +64,12 @@ QWidget {
 }
 
 QMainWindow {
-    background: #181818;
+    background: #131313;
 }
 
 #menubar {
     padding: 0px 2px 2px;
-	margin: 0 0 4px 0;
+	margin: 0 0 2px 0;
 }
 
 QLabel:link {
@@ -84,7 +98,7 @@ QWidget::disabled {
 /* Dropdown menus, Scenes box, Sources box */
 
 QAbstractItemView {
-	background-color: #212121;
+	background-color: #1E1E1E;
 }
 
 * [themeID="upArrowIconSmall"] {
@@ -189,7 +203,7 @@ QListWidget QLineEdit {
 /* Tooltips */
 
 QToolTip {
-	background-color: #212121;
+	background-color: #1E1E1E;
 	color: rgb(205,205,205);
 	border: 1px solid #343335;
 	border-radius: 4px;
@@ -218,8 +232,8 @@ QDockWidget {
 }
 
 QDockWidget::title {
-    background: #262626;
-	padding: 4px 2px;
+    background: #272727;
+	padding: 2px 2px;
 	text-align: left;
 }
 
@@ -242,7 +256,7 @@ SourceListWidget {
 
 #scenesToolbar,
 #sourcesToolbar {
-	background: #262626;
+	background: #272727;
 }
 
 /* ScrollBars */
@@ -325,7 +339,7 @@ QTabWidget::tab-bar {
 QTabBar {
 	outline: none;
 	border: none;
-	background: #1D1D1D;
+	background: #1E1E1E;
 }
 
 QTabBar::tab {
@@ -347,7 +361,7 @@ QTabBar::tab:bottom:selected {
 }
 
 QTabBar::tab:selected {
-	background-color: #262626;
+	background-color: #272727;
 }
 
 QTabBar::tab:hover {
@@ -507,7 +521,7 @@ QPushButton {
 	background-color: #333333;
 	border: none;
 	padding: 6px 20px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 	border-radius: 2px;	
 }
 
@@ -759,7 +773,7 @@ QCheckBox::indicator:hover {
 QToolBar {
 	background-color: transparent;
 	padding: 0;
-	border-top: 1px solid #212121;
+	border-top: 1px solid #1E1E1E;
 }
 
 QToolButton {
@@ -774,7 +788,7 @@ QToolButton:hover {
 }
 
 QToolButton:pressed {
-	background-color: #212121;
+	background-color: #1E1E1E;
 }
 
 * [themeID="addIconSmall"] {
@@ -849,7 +863,7 @@ QStatusBar::item {
 }
 
 QStatusBar {
-	margin-top: 4px;
+	margin-top: 2px;
 	font-size: 12px;
 }
 
@@ -874,7 +888,7 @@ QLabel#errorLabel {
 OBSBasicProperties,
 #OBSBasicSettings,
 #OBSBasicFilters {
-	background: #262626;
+	background: #272727;
 }
 
 FocusList::item {
@@ -919,7 +933,7 @@ FocusList::item {
 }
 
 #centralwidget {
-    background: #181818;
+    background: #131313;
 }
 
 /* Settings Icons */
@@ -937,7 +951,7 @@ OBSBasicSettings {
 /* Preview background color */
 
 OBSQTDisplay {
-	qproperty-displayBackgroundColor: #181818;
+	qproperty-displayBackgroundColor: #131313;
 }
 
 /* Table View */
